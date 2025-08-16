@@ -1,0 +1,63 @@
+/* style1.css */
+:root{
+  --primario:#5a3dba;
+  --secundario:#9c6eff;
+  --acento:#ffd700;
+  --fondo:#f1efff;
+  --texto-principal:#1e1a30;
+}
+
+
+*{ box-sizing:border-box; }
+body{
+  font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+  margin:0;
+  padding:0 10px;
+  background:var(--fondo);
+  color:var(--texto-principal);
+  text-align:center;
+}
+
+
+.navbar-main{
+  display:flex;
+  align-items:center;
+  justify-content:center;                
+  background:linear-gradient(90deg,var(--primario),var(--secundario));
+  padding:14px 1rem;                     
+  min-height:56px;
+  box-shadow:0 2px 5px rgba(0,0,0,.2);
+}
+.navbar-main a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  font-size:16px;
+}
+.navbar-main a:hover{ color:var(--acento); }
+
+
+.content-box{
+  width:100%;
+  max-width:900px;
+  margin:50px auto;
+  background:#fff;
+  padding:40px 30px;
+  border-radius:16px;
+  box-shadow:0 0 15px rgba(90,61,186,.2);
+}
+
+#btnCargar{
+  background:var(--secundario);
+  color:#fff;
+  padding:10px 16px;
+  border:0;
+  border-radius:10px;
+  font-weight:600;
+  cursor:pointer;
+}
+#btnCargar:hover{ background:var(--primario); }
+
+@media(max-width:480px){
+  .navbar-main a{ font-size:15px; }
+}
